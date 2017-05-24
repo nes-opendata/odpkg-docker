@@ -9,5 +9,6 @@ ADD php.ini /usr/local/etc/php/conf.d/
 
 # Add wp-content
 ADD ./wp-content /usr/src/wordpress/wp-content
-RUN cd /usr/src/wordpress/wp-content/plugins && unzip './*.zip' 
+RUN cd /usr/src/wordpress/wp-content/plugins && unzip -o './*.zip' 
 RUN rm -f /usr/src/wordpress/wp-content/plugins/*.zip
+RUN chown -R www-data:www-data /usr/src/wordpress/wp-content
