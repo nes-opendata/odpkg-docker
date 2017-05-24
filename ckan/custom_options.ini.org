@@ -12,4 +12,5 @@ ckan.harvest.mq.port = 6379
 googleanalytics.id = __GOOGLE_ANALYTICS_ID__ 
 odpkg.main_web = https://__WP_URL__
 odpkg.dashboard = https://__RAILS_URL__
+odpkg.thumbnail_count = 5
 licenses_group_url = file:///usr/lib/ckan/default/src/ckan/ckan/json-list-of-licenses.json
